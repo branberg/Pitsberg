@@ -63,7 +63,7 @@ body{
 }
 .instapress-shortcode-image a img:hover{
 	opacity: 0.8;
-	cursor: url('images/feather.cur'), pointer;
+	cursor: url('./feather.cur'), pointer;
 }
 
 #main-footer{
