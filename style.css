@@ -1,0 +1,155 @@
+body{
+	margin: 0;
+	padding: 104px 0 0 0;
+	background: #fff;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+#main-header{
+	background: #006155;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5000;
+	height: 100px;
+	border-bottom: solid 4px #fff;
+}
+#logo{
+	position: absolute;
+	top: 20px;
+	left: 32px;
+	font-size: 45px;
+	font-weight: 500;
+	margin: 0;
+}
+#population{
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	font-size: 20px;
+	width: 100px;
+	font-weight: 500;
+}
+
+.instapress-shortcode .instapress-shortcode-image{
+	margin: 0 !important;
+}
+
+.instapress-shortcode{
+	overflow: hidden;
+}
+.instapress-shortcode-image{
+	width: 20%;
+	height: auto;
+	float: left;
+	display: block;
+	margin: 0;
+}
+.instapress-shortcode-image a{
+	width: 100%;
+	height: 100%;
+}
+.instapress-shortcode-image a img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	transition: opacity .125s ease-in-out;
+	-webkit-transition: opacity .125s ease-in-out;
+	-moz-transition: opacity .125s ease-in-out;
+	-o-transition: opacity .125s ease-in-out;
+}
+.instapress-shortcode-image a img:hover{
+	opacity: 0.8;
+	cursor: url('images/feather.cur'), pointer;
+}
+
+#main-footer{
+	clear: both;
+	border-top: dotted 1px #006155;
+	border-bottom: dotted 1px #006155;
+	margin: 20px;
+	padding: 20px 0;
+	font-weight: 100;
+}
+
+/*
+DESKTOP
+*/
+@media screen and (min-width: 1700px) {
+
+	.instapress-shortcode-image{
+		width: 16.666%;
+		height: auto;
+		float: left;
+		display: block;
+	}
+
+}
+
+
+/*
+LAPTOP
+*/
+@media screen and (max-width: 1280px) {
+
+	.instapress-shortcode-image{
+		width: 20%;
+		height: auto;
+		float: left;
+		display: block;
+	}
+
+}
+
+
+/*
+TABLET
+*/
+@media screen and (max-width: 768px) {
+
+	.instapress-shortcode-image{
+		width: 33.3333%;
+		height: auto;
+		float: left;
+		display: block;
+	}
+
+}
+
+
+/*
+PHONE
+*/
+@media screen and (max-width: 480px) {
+	
+	body{
+		padding: 0;
+	}
+	#main-header{
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+	#logo{
+		position: relative;
+		font-size: 45px;
+		font-weight: 500;
+		margin: 0 0 20px 0;
+	}
+	#population{
+		position: relative;
+		font-size: 20px;
+		top: 0;
+		left: 32px;
+	}
+	.instapress-shortcode-image{
+		width: 50%;
+		height: auto;
+		float: left;
+		display: block;
+	}
+
+}
